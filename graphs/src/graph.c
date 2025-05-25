@@ -115,7 +115,7 @@ int* graph_bfs (graph_t graph, const int start, int* size) {
     destroy_queue(&queue);
    
     int* cc = secure_malloc(*size * sizeof(int));
-    memcpy(cc, bfs, *size * sizeof(int));
+    memcpy(cc, temp_cc, *size * sizeof(int));
     return cc;
 }
 
@@ -154,7 +154,7 @@ int* graph_dfs (graph_t graph, const int start, int *size) {
     destroy_stack(&stack);
 
     int *cc = secure_malloc(*size * sizeof(int));
-    memcpy(cc, dfs, *size * sizeof(int));
+    memcpy(cc, temp_cc, *size * sizeof(int));
     return cc;
 }
 
