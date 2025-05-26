@@ -9,7 +9,7 @@
 #include <stdlib.h>
 
 // Brute force solution
-int promoted_linear_counter (int arr[], int n, int k)
+int promoted_linear_counter (int arr[], int n, int k);
 
 // Divide and conquer solution
 int promoted_logarithmic_counter (int arr[], int k, int i, int j);
