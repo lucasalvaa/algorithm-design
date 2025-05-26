@@ -19,7 +19,7 @@ int cmp (const void* a, const void* b);
 
 int main (void) {
     int S[] = {8, 7, 2, 3, 5};   // tube lengths
-    const int n = sizeof(S)/sizeof(S[0]);
+    const int n = sizeof(S)/sizeof(S[0]); //
     
     int L = 10; // tube length
 
