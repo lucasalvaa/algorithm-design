@@ -49,8 +49,5 @@ int main () {
 }
 
 int cmp (const void* a, const void* b) {
-    item_t i = *(item_t*) a;
-    item_t j = *(item_t*) b;
-
-    return i.f - j.f;    
+    return ((item_t*) a)->f - ((item_t*) b)->f;    
 }
